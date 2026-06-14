@@ -1,0 +1,1 @@
+const CONFIG = { REFRESH_RATE: 300000 };

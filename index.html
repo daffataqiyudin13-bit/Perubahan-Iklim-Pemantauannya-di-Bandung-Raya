@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Overview | EcoBandung V3</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <aside class="sidebar">
+        <div class="sidebar-logo">
+            <i class="fa-solid fa-earth-asia text-secondary"></i> <span>EcoBandung</span>
+        </div>
+        <ul class="nav-menu">
+            <li><a href="index.html" class="active"><i class="fa-solid fa-house"></i> <span>Home</span></a></li>
+<li><a href="dashboard.html" ><i class="fa-solid fa-chart-pie"></i> <span>Dashboard</span></a></li>
+<li><a href="regional-map.html" ><i class="fa-solid fa-map-location-dot"></i> <span>Regional Map</span></a></li>
+<li><a href="forecast.html" ><i class="fa-solid fa-cloud-sun"></i> <span>Forecast</span></a></li>
+<li><a href="news.html" ><i class="fa-solid fa-newspaper"></i> <span>News Hub</span></a></li>
+<li><a href="community.html" ><i class="fa-solid fa-users"></i> <span>Community</span></a></li>
+<li><a href="community-tracker.html" ><i class="fa-solid fa-chart-line"></i> <span>Tracker</span></a></li>
+<li><a href="register.html" ><i class="fa-solid fa-address-card"></i> <span>Register</span></a></li>
+<li><a href="statistics.html" ><i class="fa-solid fa-chart-bar"></i> <span>Statistics</span></a></li>
+<li><a href="about.html" ><i class="fa-solid fa-circle-info"></i> <span>About</span></a></li>
+
+        </ul>
+    </aside>
+
+    <main class="main-content">
+        <header class="topbar flex-between">
+            <div>
+                <h1 class="page-title">Home Overview</h1>
+                <p class="page-subtitle">Climate Intelligence Platform</p>
+            </div>
+        </header>
+
+        <div class="ai-insight slide-up">
+            <i class="fa-solid fa-wand-magic-sparkles text-accent"></i>
+            <span id="ai-insight-text">Loading intelligence insights...</span>
+        </div>
+
+        <div class="fade-in">
+            
+        <div class="glass-card" style="background: var(--hero-gradient); margin-bottom:30px; text-align:center; padding: 60px 20px;">
+            <h1 style="font-size:3.5rem; margin-bottom:15px;">Monitoring Perubahan Iklim <br> <span class="text-secondary">Bandung Raya</span></h1>
+            <p style="font-size:1.1rem; color: #E2E8F0; max-width:600px; margin: 0 auto 30px;">Climate Intelligence & Environmental Monitoring Platform.</p>
+            <div style="display:flex; justify-content:center; gap:15px;">
+                <a href="dashboard.html" class="btn btn-primary">Explore Dashboard</a>
+                <a href="regional-map.html" class="btn btn-outline">Explore Map</a>
+            </div>
+        </div>
+        
+        <div class="grid-4">
+            <div class="glass-card text-center"><i class="fa-solid fa-wind kpi-icon text-secondary"></i><h3>Live AQI</h3><h2 class="kpi-val" id="dash-aqi">--</h2><span class="text-success">Healthy</span></div>
+            <div class="glass-card text-center"><i class="fa-solid fa-temperature-half kpi-icon text-accent"></i><h3>Temperature</h3><h2 class="kpi-val" id="dash-temp">--</h2><span class="text-muted">Avg Region</span></div>
+            <div class="glass-card text-center"><i class="fa-solid fa-droplet kpi-icon text-primary"></i><h3>Humidity</h3><h2 class="kpi-val" id="dash-hum">--</h2><span class="text-muted">Real-time</span></div>
+            <div class="glass-card text-center"><i class="fa-solid fa-leaf kpi-icon text-success"></i><h3>Env Score</h3><h2 class="kpi-val" id="dash-ehs">--</h2><span class="text-success">Excellent</span></div>
+        </div>
+    
+        </div>
+    </main>
+
+    <script src="config.js"></script>
+    <script src="api.js"></script>
+    <script src="app.js"></script>
+    <script src="map.js"></script>
+    <script src="charts.js"></script>
+    <script src="crud.js"></script>
+</body>
+</html>
